@@ -6,7 +6,7 @@ export default function useTodo(id:string){
     const [todo, setTodo] = useState<Todo>()
 
     useEffect(() => {
-        axios.get("http://localhost:8080/api/todo/" + id)
+        axios.get("/api/todo/" + id)
             .then(response => response.data)
             .then(body => {
                 setTodo(body);
