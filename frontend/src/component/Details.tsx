@@ -9,6 +9,5 @@ export default function Details(){
 
     const todo:Todo|undefined = useTodo(id)
 
-    return <>Details {id} {todo ? todo.description : "Leider nicht gefunden."}</>
+    return <>Details {id} {todo && todo.description}</>
 }
-
