@@ -6,6 +6,7 @@ export type CardsProps = {
 }
 
 export default function CardList({todos}:CardsProps) {
+
     return (
       <> <div>
             {
