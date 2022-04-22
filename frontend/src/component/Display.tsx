@@ -1,10 +1,11 @@
 import CardList from "./CardList";
 import useTodos from "../hook/useTodos";
 import {Todo} from "../model/Todo";
+//import "../stylesheets/Display.css"
 
 export default function Display() {
 
-    const todos: Todo [] = useTodos
+    const todos: Todo [] = useTodos()
 
     const todosOpen = todos.filter(
         t => t.status === "open"
@@ -19,10 +20,10 @@ export default function Display() {
     )
 
     return (
-        <div>
-        <CardList todos={todosOpen}/>
-        <CardList todos={todosPending}/>
-        <CardList todos={todosClosed}/>
-        </div>
+        <>
+            <div><CardList todos={todosOpen}/></div>
+            <div><CardList todos={todosPending}/></div>
+            <div><CardList todos={todosClosed}/></div>
+        </>
     )
 }

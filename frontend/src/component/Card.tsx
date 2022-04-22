@@ -7,7 +7,9 @@ export type TodoProperty = {
 export default function Card({todo}: TodoProperty) {
     return (
         <>
-
+            <div>{todo.id}</div>
+            <div>{todo.description}</div>
+            <div>{todo.status}</div>
         </>
     )
 }

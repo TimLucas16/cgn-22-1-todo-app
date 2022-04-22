@@ -7,12 +7,11 @@ export type CardsProps = {
 
 export default function CardList({todos}:CardsProps) {
     return (
-      <>
-            {todos.map(
-                t => <Card todo={t}/>
-            )
+      <> <div>
+            {
+                todos.map(t => <Card todo={t}/>)
             }
-
+      </div>
       </>
     )
 }
