@@ -1,12 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import BoardPage from "./page/BoardPage";
+
 import Details from "./component/Details";
+import BoardPage from "./page/BoardPage";
 
 function App() {
-
-
 
   return (
     <div className="App">
