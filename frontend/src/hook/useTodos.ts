@@ -6,7 +6,7 @@ export default function useTodos(){
 
     const [allTodos, setAllTodos] = useState<Todo[]>([])
 
-    const path:string = "http://localhost:8080/api/todo/"
+    const path:string = "/api/todo/"
 
     useEffect(() => {
         axios.get(path)
