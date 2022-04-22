@@ -9,7 +9,7 @@ export default function useTodo(id:string){
         axios.get("http://localhost:8080/api/todo/" + id)
             .then(response => response.data)
             .then(body => {
-                setTodos(body);
+                setTodo(body);
                 console.log(body);
             .catch(console.error)
     })
