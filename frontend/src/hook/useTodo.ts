@@ -10,7 +10,6 @@ export default function useTodo(id:string){
             .then(response => response.data)
             .then(body => {
                 setTodo(body);
-                console.log(body);
                 console.log(body)})
             .catch(console.error)
     })
