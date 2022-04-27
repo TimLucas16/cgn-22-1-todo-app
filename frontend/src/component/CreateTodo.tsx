@@ -11,7 +11,7 @@ export default function CreateTodo() {
         setDescription(event.target.value)
     }
 
-    const handleSubmit = (event: FormEvent) => {
+    const HandleSubmit = (event: FormEvent) => {
         event.preventDefault()
         const todo:Todo = {description, status}
         usePost(todo)
@@ -20,7 +20,7 @@ export default function CreateTodo() {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={HandleSubmit}>
                 <input type={"text"}  required value={description} onChange={handleChange}/>
                 <button type={"submit"} value={"Submit"}>submit</button>
             </form>
