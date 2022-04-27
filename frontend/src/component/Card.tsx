@@ -8,7 +8,7 @@ export type TodoProperty = {
 export default function Card({todo}: TodoProperty) {
 
     const clickEvent = (todo:any) => {
-        let status1 = ""
+        let status1
         {todo.status==="open" ? status1 = "pending" : status1 = "closed"}
         const newTodo: Todo = {id: todo.id, description: todo.description, status: status1}
         axios.put("/api/todo/" + todo.id, newTodo)
