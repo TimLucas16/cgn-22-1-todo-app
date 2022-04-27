@@ -6,6 +6,7 @@ export type TodoProperty = {
 }
 
 export default function Card({todo}: TodoProperty) {
+
     const clickEvent = (todo:any) => {
         let status1 = ""
         {todo.status==="open" ? status1 = "pending" : status1 = "closed"}
